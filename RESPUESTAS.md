@@ -31,26 +31,59 @@ Responde con **lenguaje técnico** y **argumentos** (no solo opiniones). Si proc
 - Documentación y reporte, pudiendose implementar en SIEMs de todo tipo de presupuesto, y se estandariza como se comunicarían los fallos. No valdría la excusa de "si no se documenta, no pasa nada", habría que obligar a documentar fecha, hora, tipo de fallo, impacto, etc, creando una base algo rudimentaria, pero bastante útil.
 
 ### 1.8) ¿Qué duda, riesgo o punto crítico te queda abierto tras la unidad?
-- 
+- El riesgo de privacidad y legaliad en OSINT, ya que se puede obtener información muy sensible de personas, y no está claro hasta que punto es legal obtenerla y usarla. ¿Hasta donde es inteligencia y donde acoso? ¿Donde está el límite?.
 
 
 ## 2) Resumen esquematizado (obligatorio)
 Incluye **todos los puntos** vistos en la unidad. Prioriza esquema/tabla/listas sobre párrafos largos.
 
 ### 2.1) Mapa/índice de la unidad (visión global)
-- 
+- 2.1 Taxonomía de incidentes
+- 2.2.1 SOC - Servicios y herramientas
+- 2.2.2.1 Qué es un SIEM
+- 2.2.2.2 Casos de uso
+- 2.2.3 Implantación de un SIEM
+- 2.2.4 Evolución del SIEM
+- 2.3.1 Fuentes abiertas. OSINT
+- 2.4.1 Documentación de Incidentes
+- 2.4.2 Cómo escribir informes
 
 ### 2.2) Conceptos clave (lista breve)
-- 
+- Evento vs Incidente: Todo incidente es un evento, pero no todo evento es un incidente.
+- SOC (Security Operations Center): Centralización de la defensa.
+- SIEM (Security Information and Event Management): Herramienta que permite gestionar la información de seguridad y los eventos de seguridad.
+- Falso positivo: Alerta que no representa una amenaza real.
+- OSINT (Open Source Intelligence): Inteligencia obtenida de fuentes abiertas.
 
 ### 2.3) Procesos / procedimientos (pasos o checklist)
-- 
+- Ciclo de vida del incidente:
+- Preparación: Herramientas preparadas, personal formado, etc.
+- Detección y análisis: Triaje de alertas y validación de falsos positivos
+- Contención, erradicación y recuperación: Frenar daño, eliminar amenaza y volver a la normalidad.
+- Post-incidente (Lecciones aprendidas): Informe post-incidente y mejora continua.
+Implantación del SIEM:
+- Definir alcance y datos a monitorizar
+- Recolección de logs
+- Casos de Uso
+- Ajuste para reducir falsos positivos
 
 ### 2.4) Herramientas / técnicas (si aplica)
-- 
+- SIEM: Splunk, Elastic SIEM, QRadar, Wazuh
+- OSINT: Google, Shodan, Maltego, theHarvester
+- Gestión de casos: Jira, TheHive
+- Técnicas: OSINT, correlación de logs, análisis de tráfico
 
 ### 2.5) Buenas prácticas y errores típicos
-- 
+- Buenas prácticas:
+  - Usar todos los logs en UTC
+  - Aplicar principio de mínimo privilegio en los accesos al SOC
+  - Documentación en tiempo real, no esperando al último momento
+  - Preservar evidencia en caso de análisis forense
+- Errores típicos:
+  - Hacer log de todo sin ningún criterio
+  - Dejar reglas por defecto (causa muchos falsos positivos)
+  - Usar jerga incomprensible para directivos o público no técnico
+  - Actuar sin autorización explícita
 
 ### 2.6) Glosario mínimo (términos y definiciones cortas)
 - 
