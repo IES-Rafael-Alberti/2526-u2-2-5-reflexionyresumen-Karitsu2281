@@ -13,12 +13,12 @@
 
 ## 1. Datos del alumno/a
 
-- **Nombre y apellidos:**  
-- **Iniciales:**  
-- **Grupo:**  
-- **Actividad / ID:**  
-- **Unidad / Tema:**  
-- **Fecha de entrega:**  
+- **Nombre y apellidos:**  Hugo Flores Molina
+- **Iniciales:**  HFM
+- **Grupo:**  4º
+- **Actividad / ID:**  2526-u2-2-5-reflexionyresumen-Karitsu2281
+- **Unidad / Tema:**  Tema 2
+- **Fecha de entrega:**  19/02/2026
 
 ---
 
