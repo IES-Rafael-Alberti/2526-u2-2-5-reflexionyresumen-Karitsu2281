@@ -1,9 +1,9 @@
 # RESPUESTAS — Reflexión y Resumen (Plantilla genérica)
 
-> **Actividad / ID:**  
-> **Unidad / Tema:**  
-> **Alumno/a:**  
-> **Fecha:**  
+> **Actividad / ID:** 2526-u2-2-5-reflexionyresumen-Karitsu2281
+> **Unidad / Tema:** Tema 2
+> **Alumno/a:** Hugo Flores Molina
+> **Fecha:** 19/02/2026
 
 ---
 
