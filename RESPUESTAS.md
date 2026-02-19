@@ -86,7 +86,11 @@ Implantación del SIEM:
   - Actuar sin autorización explícita
 
 ### 2.6) Glosario mínimo (términos y definiciones cortas)
-- 
+- Analista L1: Triaje inicial, valida alertas, escalan cuando es necesario y siguen playbooks básicos
+- Playbook: Guía paso a paso para manejar un tipo específico de incidente
+- IoC (Indicator of Compromise): Dato que evidencia una intrusión (IP, hash, dominio, etc.)
+- TTP (Tactic, Technique, and Procedure): Táctica, técnica y procedimientos, como se comporta un atacante
+- Log: Registro de actividad generado por un equipo
 
 
 ## 3) (Opcional) Evidencias y recursos usados
