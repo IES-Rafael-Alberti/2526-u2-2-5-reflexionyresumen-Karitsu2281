@@ -24,6 +24,7 @@ Responde con **lenguaje técnico** y **argumentos** (no solo opiniones). Si proc
 
 ### 1.5) ¿Qué parte recortarías o simplificarías si hubiera menos tiempo? Justifica.
 - Simplificar la comparativa entre taxonomías de incidentes, aunque es muy importante clasificarlos, en el día a día basta con dominar una estándar (como la del INCIBE o Mitre ATT&CK) y simplemente saber que existen otras. Para mí es más importante dominar los conceptos y procedimientos que los detalles de cada taxonomía.
+
 ### 1.6) ¿Qué tema has echado en falta o ampliarías? Justifica.
 - Automatización (SOAR) con ejemplos de playbooks automatizados. La evolución el SIEM va para el SOAR para combatir la fatiga de alerta, ver como se realiza una respuesta automática, se habría explicado más facilmente.
 
@@ -97,9 +98,9 @@ Implantación del SIEM:
 Enlaza aquí evidencias (capturas, logs, configuraciones, salidas de comandos, etc.) si forman parte de tu trabajo.
 
 ### Evidencia 1
-- Archivo: `evidencias/01_...`
-- Qué demuestra:
-- Qué he aprendido:
+- Archivo: `evidencias/01_ReglasSnortEjemplos.md`
+- Qué demuestra: Cómo funciona una regla de Snort de forma rápida, ejemplos de reglas implementadas y justificación de las reglas elegidas.
+- Qué he aprendido: He aprendido que las reglas pueden ser algo quisquillosas, ya que si no se definen bien pueden generar muchos falsos positivos.
 
 ### Evidencia 2
 - Archivo: `evidencias/02_...`
@@ -108,4 +109,4 @@ Enlaza aquí evidencias (capturas, logs, configuraciones, salidas de comandos, e
 
 
 ## 4) Conclusión (cierre)
-- 
+- La unidad 2 ha establecido la base de la ciberseguridad defensiva. Más allá de las herramientas, lo vital ha sido comprender que la seguridad es un proceso continuo (SOC), detección (SIEM) y comunicación (Informes). La capacidad de transformar datos en inteligencia es el valor central que se espera de nosotros en un entorno real.
