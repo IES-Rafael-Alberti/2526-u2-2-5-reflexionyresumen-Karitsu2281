@@ -57,22 +57,23 @@ Incluye **todos los puntos** vistos en la unidad. Prioriza esquema/tabla/listas 
 - OSINT (Open Source Intelligence): Inteligencia obtenida de fuentes abiertas.
 
 ### 2.3) Procesos / procedimientos (pasos o checklist)
-- Ciclo de vida del incidente:
-- Preparación: Herramientas preparadas, personal formado, etc.
-- Detección y análisis: Triaje de alertas y validación de falsos positivos
-- Contención, erradicación y recuperación: Frenar daño, eliminar amenaza y volver a la normalidad.
-- Post-incidente (Lecciones aprendidas): Informe post-incidente y mejora continua.
-Implantación del SIEM:
-- Definir alcance y datos a monitorizar
-- Recolección de logs
-- Casos de Uso
-- Ajuste para reducir falsos positivos
+Flujo del SOC:
+- Recolección: Agrupación de logs de puntos, firewalls y aplicaciones
+- Correlación: Analisis de logs con casos de uso.
+- Generación de alertas: Notificación al equipo de monitoreo ante comportamientos sospechosos
+- Validación: Se verifica si es un incidente real o un falso positivo.
+- Respuesta: Acciones realizadas para minimizar el impacto del incidente.
+Creación de un caso de uso (SIEM):
+- Creación de reglas y alertas: Diseñar "firmas" o patrones sospechosos de comportamiento (por ejemplo fuerza bruta, ataques DDoS, etc.)
+- Definición de procedimientos de respuesta: Establecer pasos y "playbooks" para los analistas.
+- Validación y ajuste: Pruebas y simulaciones para validar su correcta implementación y realizar ajustes si es necesario.
 
 ### 2.4) Herramientas / técnicas (si aplica)
 - SIEM: Splunk, Elastic SIEM, QRadar, Wazuh
 - OSINT: Google, Shodan, Maltego, theHarvester
 - Gestión de casos: Jira, TheHive
-- Técnicas: OSINT, correlación de logs, análisis de tráfico
+- Técnicas: OSINT, correlación de logs, análisis de tráfico, análisis forense
+- Inteligencia: Threat Intelligence (plataformas)
 
 ### 2.5) Buenas prácticas y errores típicos
 - Buenas prácticas:
@@ -92,6 +93,8 @@ Implantación del SIEM:
 - IoC (Indicator of Compromise): Dato que evidencia una intrusión (IP, hash, dominio, etc.)
 - TTP (Tactic, Technique, and Procedure): Táctica, técnica y procedimientos, como se comporta un atacante
 - Log: Registro de actividad generado por un equipo
+- Threat Intelligence: Servicio que provee información (IoCs) sobre amenazas actuales y futuras para alimentar el SIEM.
+- Falso positivo: Alerta que no representa una amenaza real.
 
 
 ## 3) (Opcional) Evidencias y recursos usados
@@ -109,4 +112,4 @@ Enlaza aquí evidencias (capturas, logs, configuraciones, salidas de comandos, e
 
 
 ## 4) Conclusión (cierre)
-- La unidad 2 ha establecido la base de la ciberseguridad defensiva. Más allá de las herramientas, lo vital ha sido comprender que la seguridad es un proceso continuo (SOC), detección (SIEM) y comunicación (Informes). La capacidad de transformar datos en inteligencia es el valor central que se espera de nosotros en un entorno real.
+- La unidad 2 ha establecido, para mí, la base de la ciberseguridad defensiva. Más allá de las herramientas, lo vital ha sido comprender que la seguridad es un proceso continuo (SOC), detección (SIEM) y comunicación (Informes). La capacidad de transformar datos en inteligencia es el valor central que se espera de nosotros en un entorno real, además, he entendido que debemos documentar correctamente los casos de uso para que puedan ser fácilmente replicables, ya que un SIEM puede ser inútil si no se documentan correctamente dichos casos o personal bien estructuado para responder a los fallos de forma efectiva.

@@ -15,7 +15,7 @@
 
 - **Nombre y apellidos:**  Hugo Flores Molina
 - **Iniciales:**  HFM
-- **Grupo:**  4º
+- **Grupo:**  4
 - **Actividad / ID:**  2526-u2-2-5-reflexionyresumen-Karitsu2281
 - **Unidad / Tema:**  Tema 2
 - **Fecha de entrega:**  19/02/2026
@@ -88,12 +88,12 @@ Recomendación de nombres:
 
 ## 7. Checklist de entrega
 
-- [ ] He rellenado `Actividad / ID` y `Unidad / Tema`
-- [ ] He rellenado los datos del alumno/a en `README.md` y `RESPUESTAS.md`
-- [ ] He respondido **todas** las preguntas en `RESPUESTAS.md`
-- [ ] He incluido el **resumen esquematizado** contemplando todos los puntos
-- [ ] (Opcional) He incluido evidencias en `/evidencias/` y las he enlazado desde `RESPUESTAS.md`
-- [ ] El repositorio está ordenado y es legible
+- [X] He rellenado `Actividad / ID` y `Unidad / Tema`
+- [X] He rellenado los datos del alumno/a en `README.md` y `RESPUESTAS.md`
+- [X] He respondido **todas** las preguntas en `RESPUESTAS.md`
+- [X] He incluido el **resumen esquematizado** contemplando todos los puntos
+- [X] He incluido evidencias en `/evidencias/` y las he enlazado desde `RESPUESTAS.md`
+- [X] El repositorio está ordenado y es legible
 
 
 ## 8. Evaluación
