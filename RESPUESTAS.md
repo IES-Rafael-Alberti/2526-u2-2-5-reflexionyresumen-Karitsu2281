@@ -39,10 +39,10 @@ Responde con **lenguaje técnico** y **argumentos** (no solo opiniones). Si proc
 Incluye **todos los puntos** vistos en la unidad. Prioriza esquema/tabla/listas sobre párrafos largos.
 
 ### 2.1) Mapa/índice de la unidad (visión global)
-- 2.1 Taxonomía de incidentes
-- 2.2.1 SOC - Servicios y herramientas
-- 2.2.2.1 Qué es un SIEM
-- 2.2.2.2 Casos de uso
+- 2.1 Taxonomía de incidentes: Consiste en evaluar la seguridad de un sistema en 5 grandes grupos: Confidencialidad, Integridad, Disponibilidad, Trazabilidad y autorización. A partir de eso, se determina la categoría de seguridad, además de que al realizar una taxonomía común permite agrupar y clasificar amenazas de forma más eficiente y rápida.
+- 2.2.1 SOC - Servicios y herramientas: El SOC supervisa, detecta y previene amenazas contínuamente, a diferencia de los CERT y CSIRT, que actúan ante incidentes muy graves, no por una amenaza menor. Dichas amenazas se identifican mediante IOCs, que son evidencias que detectan actividad sospechosa. Se apoya en servicios, como Threat Intelligence, Monitoring & Triage, Incident Response, Forensics y Threat Hunting.  
+- 2.2.2.1 Qué es un SIEM: Es el "corazón" del SOC, que permite gestionar la información de seguridad y los eventos de seguridad. Se basa en la recopilación de registros de seguridad de diferentes fuentes (logs, firewalls, aplicaciones, etc.) y su correlación para detectar amenazas en tiempo real con reglas o listas blancas/negras.
+- 2.2.2.2 Casos de uso: 
 - 2.2.3 Implantación de un SIEM
 - 2.2.4 Evolución del SIEM
 - 2.3.1 Fuentes abiertas. OSINT
