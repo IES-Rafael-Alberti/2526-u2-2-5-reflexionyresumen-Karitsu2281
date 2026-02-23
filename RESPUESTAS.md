@@ -42,12 +42,16 @@ Incluye **todos los puntos** vistos en la unidad. Prioriza esquema/tabla/listas 
 - 2.1 Taxonomía de incidentes: Consiste en evaluar la seguridad de un sistema en 5 grandes grupos: Confidencialidad, Integridad, Disponibilidad, Trazabilidad y autorización. A partir de eso, se determina la categoría de seguridad, además de que al realizar una taxonomía común permite agrupar y clasificar amenazas de forma más eficiente y rápida.
 - 2.2.1 SOC - Servicios y herramientas: El SOC supervisa, detecta y previene amenazas contínuamente, a diferencia de los CERT y CSIRT, que actúan ante incidentes muy graves, no por una amenaza menor. Dichas amenazas se identifican mediante IOCs, que son evidencias que detectan actividad sospechosa. Se apoya en servicios, como Threat Intelligence, Monitoring & Triage, Incident Response, Forensics y Threat Hunting.  
 - 2.2.2.1 Qué es un SIEM: Es el "corazón" del SOC, que permite gestionar la información de seguridad y los eventos de seguridad. Se basa en la recopilación de registros de seguridad de diferentes fuentes (logs, firewalls, aplicaciones, etc.) y su correlación para detectar amenazas en tiempo real con reglas o listas blancas/negras.
-- 2.2.2.2 Casos de uso: 
-- 2.2.3 Implantación de un SIEM
-- 2.2.4 Evolución del SIEM
-- 2.3.1 Fuentes abiertas. OSINT
-- 2.4.1 Documentación de Incidentes
-- 2.4.2 Cómo escribir informes
+- 2.2.2.2 Casos de uso: Es un escenario específico que guía como las capacidades del SOC detectan y responden a amenazas. Detallan que datos se usan, reglas aplicadas e IOCs a implementar dentro del propio SIEM y que procedimientos de respuesta seguir. En el punto se detalla 10 casos de uso que debería tener un SOC para su correcto funcionamiento.
+- 2.2.3 Implantación de un SIEM: Se debe realizar de forma gradual siguiendo 4 fases:
+    - Descubrimiento y planificación: Evaluar políticas, controles de la organización y definir objetivos
+    - Fase piloto: Probar el sistema de forma limitada para realizar reglas más precisas y comprobar si es útil.
+    - Implementación: Desplegar de forma escalonada donde se documenta todo en un manual de respuesta o runbooks.
+    - Mejora continua: Evolucionar de forma constante con nuevas reglas y actualizaciones ante el cambio constante de amenazas.
+- 2.2.4 Evolución del SIEM: Las amenazas que hay y el crecimiento de la superficie de ataque, hacen que SIEM tenga un término llamado "fatiga de alertas", si no se integran herramientas adicionales como SOAR, que ayuda bastante a automatizar tareas repetitivas y estandarizar respuestas a través de playbooks automáticos, reduciendo bastante la carga de los analistas.
+- 2.3.1 Fuentes abiertas. OSINT: Consiste en la recolección de información de fuentes abiertas para obtener información sobre amenazas, actividades de ciberdelincuentes, etc... mediante fuentes públicas y accesibles en Internet, diferenciandose de la huella, donde el OSINT tiene metodologías más rápidas y no interactúa con el objetivo. Sigue un ciclo de 6 fases desde la planificación
+- 2.4.1 Documentación de Incidentes: Es vital para cumplir con la normativa vigente, apuntar lecciones aprendidas y identificar patrones de amenazas para mejorar las defensas en el futuro. Acompañan durante todo el ciclo de vida del incidente y se debe registrar de forma detallada, con información, clasificación de peligrosidad, detalles técnicos y una línea temporal de las acciones realizadas, culminando en la etapa post-mortem debatiendo un plan futuro debatiendo si se hizo bien, en que se falló y como evitar que se repita.
+- 2.4.2 Cómo escribir informes: A la hora de redactar, el objetivo y la audiencia a la que se dirige debe ser adaptado según que información se quiera transmitir (técnico, legal o directivo), además de que se explican muchos consejos para redactarlo de forma efectiva, como KISS (Keep It Simple, Stupid), que es la idea de que menos es más (es decir, que es mejor leerse un informe de dos páginas bien explicado que uno de 20 páginas), además de siempre incluir un resumen ejecutivo que nunca ocupe más de una página, y definir claramente los hechos demostrables (con las pruebas adjuntas, por supuesto) y las hipótesis mientras se elabora dicho informe.
 
 ### 2.2) Conceptos clave (lista breve)
 - Evento vs Incidente: Todo incidente es un evento, pero no todo evento es un incidente.
