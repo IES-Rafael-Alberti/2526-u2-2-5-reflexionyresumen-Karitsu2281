@@ -11,25 +11,25 @@
 Responde con **lenguaje técnico** y **argumentos** (no solo opiniones). Si procede, usa ejemplos, riesgos y decisiones justificadas.
 
 ### 1.1) ¿Qué te han parecido los temas tratados en la unidad?
-- Ofrece una visión necesaria para la seguridad informática. Está muy bien quitar el tópico de hacker solitario, ya que se centran en SOCs (Centro de operaciones de seguridad.) La teoría, desde la taxonomía de incidentes, hasta la herramienta, que es el SIEM (Sistema de gestión de incidentes), y el informe, aporta una buena coherencia. Es importante entender que el SIEM es inutil sin procesos automatizados, y las personas (Analistas L1/L2/L3).
+- Ofrece una visión necesaria para la seguridad informática. Está muy bien quitar el tópico de hacker solitario, ya que se centran en SOCs (Centro de operaciones de seguridad.), que se sostienen en cuatro pilares: Personas, procesos, tecnologías y servicios. La teoría, desde la taxonomía de incidentes, hasta la herramienta, que es el SIEM (Sistema de Gestión de Eventos e Información de Seguridad), y el informe, aporta una buena coherencia. Es importante entender que el SIEM es inutil sin procesos automatizados, y las personas (Analistas L1/L2/L3).
 
 ### 1.2) ¿Qué ha sido más útil para tu futuro puesto de trabajo? ¿Por qué?
-- Lo más util ha sido el manejo de incidentes y la estructura del informe, ya que independientemente del rol que me asignan, debo saber como escalar un problema (diferenciar de evento rutinario con un incidente) y como redactar un informe para audiencias no técnicas, ya que no serviría de nada si puedo escalar bien un problema pero no redactar un informe.
+- Lo más util ha sido el manejo de incidentes y la estructura del informe, ya que independientemente del rol que me asignan, debo saber como escalar un problema (diferenciar de evento rutinario con un incidente) y como redactar un informe para audiencias no técnicas, ya que no serviría de nada si puedo escalar bien un problema pero no redactar un informe. Además es muy útil la regla KISS (Keep It Simple, Stupid), ya que cualquier audencia puede entenderlo sin mayor problema, y conocer la la audiencia para adaptarlo a dicha audiencia.
 
 ### 1.3) ¿Qué partes ya conocías y cuáles han sido nuevas para ti?
-- Conocía conceptos básicos como el logging, la existencia del "malware" y herramientas de escaneo básicas (como Nmap), pero lo nuevo para mí ha sido distinguir roles dentro del propio SOC (Threat Hunters, Incident Response, etc.), correlación en el SIEM y la metodología de OSINT como fase de reconocimiento, no hacer 4 búsquedas de Google y ya.
+- Conocía conceptos básicos como el logging, la existencia del "malware" y herramientas de escaneo básicas (como Nmap), pero lo nuevo para mí ha sido distinguir roles dentro del propio SOC (Threat Hunters, Incident Response, etc.), correlación en el SIEM y la metodología de OSINT (qué suele estar diviido en unas 6 fases, desde planificación hasta difusión) como fase de reconocimiento, no hacer 4 búsquedas de Google y ya.
 
 ### 1.4) ¿Qué concepto/idea te ha llamado más la atención y por qué?
 - El concepto de "Fatiga de alerta", porque en la mayoría de casos (no todos) suelen tener un problema de exceso de ruido, que suelen ser falsos positivos, y la importancia de la implantación del SIEM y definir claramente las reglas para no saturar a los analistas.
 
 ### 1.5) ¿Qué parte recortarías o simplificarías si hubiera menos tiempo? Justifica.
-- Simplificar la comparativa entre taxonomías de incidentes, aunque es muy importante clasificarlos, en el día a día basta con dominar una estándar (como la del INCIBE o Mitre ATT&CK) y simplemente saber que existen otras. Para mí es más importante dominar los conceptos y procedimientos que los detalles de cada taxonomía.
+- Simplificar la comparativa entre taxonomías de incidentes, aunque es muy importante clasificarlos, en el día a día basta con dominar una estándar (como la del INCIBE/ENISA) o indicadores de Ataque (IoCs o TTPs en el caso de Mitre ATT&CK) y simplemente saber que existen otras. Para mí es más importante dominar los conceptos y procedimientos que los detalles de cada taxonomía.
 
 ### 1.6) ¿Qué tema has echado en falta o ampliarías? Justifica.
 - Automatización (SOAR) con ejemplos de playbooks automatizados. La evolución el SIEM va para el SOAR para combatir la fatiga de alerta, ver como se realiza una respuesta automática, se habría explicado más facilmente.
 
 ### 1.7) ¿Qué aplicarías “mañana” en un entorno real con recursos limitados?
-- Documentación y reporte, pudiendose implementar en SIEMs de todo tipo de presupuesto, y se estandariza como se comunicarían los fallos. No valdría la excusa de "si no se documenta, no pasa nada", habría que obligar a documentar fecha, hora, tipo de fallo, impacto, etc, creando una base algo rudimentaria, pero bastante útil.
+- Documentación y reporte, pudiendose implementar en SIEMs de todo tipo de presupuesto, y se estandariza como se comunicarían los fallos. No valdría la excusa de "si no se documenta, no pasa nada", habría que obligar a documentar fecha, hora, tipo de fallo, impacto, etc, creando una base algo rudimentaria, pero bastante útil, además de una sesión post-mortem al resolver el fallo para evitar que se repita.
 
 ### 1.8) ¿Qué duda, riesgo o punto crítico te queda abierto tras la unidad?
 - El riesgo de privacidad y legaliad en OSINT, ya que se puede obtener información muy sensible de personas, y no está claro hasta que punto es legal obtenerla y usarla. ¿Hasta donde es inteligencia y donde acoso? ¿Donde está el límite?.
@@ -55,10 +55,11 @@ Incluye **todos los puntos** vistos en la unidad. Prioriza esquema/tabla/listas 
 
 ### 2.2) Conceptos clave (lista breve)
 - Evento vs Incidente: Todo incidente es un evento, pero no todo evento es un incidente.
-- SOC (Security Operations Center): Centralización de la defensa.
+- SOC (Security Operations Center): Centralización de la defensa, integrando 4 pilares: personas, procesos, tecnología y servicios.
 - SIEM (Security Information and Event Management): Herramienta que permite gestionar la información de seguridad y los eventos de seguridad.
 - Falso positivo: Alerta que no representa una amenaza real.
 - OSINT (Open Source Intelligence): Inteligencia obtenida de fuentes abiertas.
+- Vector de ataque vs técnica: El vector de ataque es el canal por donde entra el atacante (correo, RDP expuesto o USB), mientras que la técnica es la acción que realiza el atacante (phishing, fuerza bruta, etc).
 
 ### 2.3) Procesos / procedimientos (pasos o checklist)
 Flujo del SOC:
@@ -67,8 +68,12 @@ Flujo del SOC:
 - Generación de alertas: Notificación al equipo de monitoreo ante comportamientos sospechosos
 - Validación: Se verifica si es un incidente real o un falso positivo.
 - Respuesta: Acciones realizadas para minimizar el impacto del incidente.
+- Recuperación: Restauración de los sistemas afectados.
+- Post-mortem: Análisis del incidente para mejorar las defensas.
 Creación de un caso de uso (SIEM):
-- Creación de reglas y alertas: Diseñar "firmas" o patrones sospechosos de comportamiento (por ejemplo fuerza bruta, ataques DDoS, etc.)
+- Identificación de amenazas revelantes para la empresa, definiendo escenario
+- Definición de fuentes de datos: Logs, métricas, etc.
+- Definición de reglas y alertas: Diseñar "firmas" o patrones sospechosos de comportamiento (por ejemplo fuerza bruta, ataques DDoS, etc.)
 - Definición de procedimientos de respuesta: Establecer pasos y "playbooks" para los analistas.
 - Validación y ajuste: Pruebas y simulaciones para validar su correcta implementación y realizar ajustes si es necesario.
 
@@ -78,6 +83,8 @@ Creación de un caso de uso (SIEM):
 - Gestión de casos: Jira, TheHive
 - Técnicas: OSINT, correlación de logs, análisis de tráfico, análisis forense
 - Inteligencia: Threat Intelligence (plataformas)
+- SOAR: Splunk SOAR, Cortex XSOAR, TheHive
+- EDR: CrowdStrike Falcon, SentinelOne, Microsoft Defender for Endpoint
 
 ### 2.5) Buenas prácticas y errores típicos
 - Buenas prácticas:
@@ -85,9 +92,11 @@ Creación de un caso de uso (SIEM):
   - Aplicar principio de mínimo privilegio en los accesos al SOC
   - Documentación en tiempo real, no esperando al último momento
   - Preservar evidencia en caso de análisis forense
+  - Implementar de forma gradual, empezando por lo más crítico
+  - Usar la regla de KISS (Keep It Simple, Stupid)
 - Errores típicos:
   - Hacer log de todo sin ningún criterio
-  - Dejar reglas por defecto (causa muchos falsos positivos)
+  - Dejar reglas por defecto (causa muchos falsos positivos y fatiga de alertas)
   - Usar jerga incomprensible para directivos o público no técnico
   - Actuar sin autorización explícita
 
@@ -99,6 +108,7 @@ Creación de un caso de uso (SIEM):
 - Log: Registro de actividad generado por un equipo
 - Threat Intelligence: Servicio que provee información (IoCs) sobre amenazas actuales y futuras para alimentar el SIEM.
 - Falso positivo: Alerta que no representa una amenaza real.
+- Threat Hunting: Proceso proactivo de búsqueda de amenazas en la red.
 
 
 ## 3) (Opcional) Evidencias y recursos usados
